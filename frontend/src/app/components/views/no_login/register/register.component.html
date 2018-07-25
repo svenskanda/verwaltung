@@ -1,0 +1,38 @@
+<div class="centered_box">
+  <div class="centered_content_box">
+    <div class="textfield_box">
+      <label>Benutzername</label>
+      <input [(ngModel)]="input.username" type="text" placeholder="Benutzername" />
+    </div>
+    <div class="textfield_box">
+      <label>Kennwort</label>
+      <input [(ngModel)]="input.password" type="text" placeholder="Kennwort" />
+    </div>
+    <div class="textfield_box">
+      <label>Kennwortwiederholung</label>
+      <input [(ngModel)]="input.passwordRetry" type="text" placeholder="Kennwortwiederholung" />
+    </div>
+    <div class="textfield_box">
+      <label>Stadt</label>
+      <input [(ngModel)]="input.city" type="text" placeholder="Stadt" />
+    </div>
+    <div class="textfield_box">
+      <label>Land</label>
+      <input [(ngModel)]="input.country" type="text" placeholder="Land" />
+    </div>
+    <div class="checkbox_box">
+      <label>Ich habe die AGBs gelesen und akzeptiere diese</label>
+      <input [(ngModel)]="input.abg" type="checkbox" />
+    </div>
+    <div class="checkbox_box">
+      <label>Ich habe die Datenschutzbedinungen gelesen und akzeptiere diese</label>
+      <input [(ngModel)]="input.privacy" type="checkbox" />
+    </div>
+    <div class="button_box">
+      <div class="button" (click)="registerUser()">Konto anlegen</div>
+      <div class="button"></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,85 @@
+body {
+  background-color: #17c4aa;/*#c7ffbf;*/
+  font-family: ARIAL, VERDANA, HELVETICA;
+}
+.clear {
+  clear: both;
+}
+
+/**
+ * Default - Button - Style
+ */
+.button {
+  width: 180px;
+  border: 1px solid #000000;
+  padding: 8px;
+  float: right;
+  background-color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 4px;
+}
+.button:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+/**
+ * Icons (Container)
+ */
+.icon-add {
+  background-image: url('./assets/pics/add.png');
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+.icon-remove {
+  background-image: url('./assets/pics/minus.png');
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-update {
+  background-image: url('./assets/pics/save.png');
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/**
+ * Default - Textfield - Style
+ */
+.textfield_box {
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+}
+.textfield_box > label {
+  width: 100%;
+  font-weight: bold;
+}
+.textfield_box > input {
+  padding: 8px;
+  width: 482px;
+}
+
+/**
+ * Centered - Container
+ */
+.centered_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 600px;
+  transform: skewX(-10deg);
+  background-color: #93fc92;
+  margin: 50px auto;
+  height: 300px;
+}
+.centered_content_box {
+  transform: skewX(10deg);
+  font-size: 16px;
+  width: 500px;
+}

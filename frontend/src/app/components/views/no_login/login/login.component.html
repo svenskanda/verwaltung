@@ -1,0 +1,22 @@
+<div class="centered_box">
+  <div class="centered_content_box">
+    <div class="radio_box">
+      <input [(ngModel)]="loginType" type="radio" name="login_type" />
+      <input [(ngModel)]="loginType" type="radio" name="login_type" />
+    </div>
+    <div class="textfield_box">
+      <label>Benutzername</label>
+      <input [(ngModel)]="username" type="text" placeholder="Benutzername" />
+    </div>
+    <div class="textfield_box">
+      <label>Kennwort</label>
+      <input [(ngModel)]="password" type="password" placeholder="Kennwort" />
+    </div>
+    <div class="button_box">
+      <div class="button" (click)="loginUser()">einloggen</div>
+      <div class="button">Kennwort vergessen?</div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+

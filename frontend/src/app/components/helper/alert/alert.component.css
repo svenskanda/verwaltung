@@ -1,0 +1,20 @@
+.alert_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  z-index: 99;
+}
+.green_box {
+  color: #57e567;
+  border: 1px solid #57e567;
+}
+.red_box {
+  color: red;
+  border: 1px solid red;
+}
