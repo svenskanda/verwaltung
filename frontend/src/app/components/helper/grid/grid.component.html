@@ -1,0 +1,26 @@
+<div class="content">
+  
+  <div class="tbar"*ngIf="insert !== false || update !== false || del !==  false">
+    <div class="tbar_button" *ngIf="insert !== false"><div class="icon-add"></div></div>
+    <div class="tbar_button" *ngIf="update !== false"><div class="icon-update"></div></div>
+    <div class="tbar_button" *ngIf="del !== false"><div class="icon-remove"></div></div>
+  </div>
+  
+  <table>
+    
+    <!-- Tabellenkopf -->
+    <tr>
+      <th *ngFor="let field of fields" [id]="field.name"><div class="th_inner">{{ field.header }}</div></th>
+    </tr>
+    
+    <!-- Tabellencontext -->
+    <tr *ngFor="let datensatz of data">
+      <td *ngFor="let field of fields" class="mobile_header">{{ field.header }}</td>
+      <td *ngFor="let field of fields">{{ datensatz[field.name] }}</td>
+    </tr>
+    
+  </table>
+  
+  <app-inline-edit-win></app-inline-edit-win>
+  
+</div>

@@ -1,0 +1,6 @@
+<div class="wrapper">
+  {{tett}}
+  <app-select class="box" [(config)]="config"></app-select>
+  <app-select-list class="box" *ngIf="config.type === 'select-list'"></app-select-list>
+  <app-text class="box" *ngIf="config.type === 'text'"></app-text>
+</div>

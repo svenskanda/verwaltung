@@ -1,0 +1,23 @@
+<!--<div class="nav_wrapper">
+  test
+</div>-->
+<app-alert></app-alert>
+<div class="header">
+  <div class="logo_wrapper">
+    <div class="logo"></div>
+  </div>
+  <div class="nav_wrapper">
+    <div [class]="mobilerExpanded !== false ? 'nav-items-expanded' : 'nav-items'">
+      <div *ngFor="let item of items.web">
+      <div [class]="mobilerExpanded !== false ? 'nav-item-expanded' : 'nav-item'" [routerLink]="item.route">
+        <p>{{ item.name }}</p>
+      </div>
+      </div>
+    </div>
+    <div (click)="toggleState()" class="nav-item nav-item-mobile">
+      <div class="bars_icon"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<router-outlet></router-outlet>
